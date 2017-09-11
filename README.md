@@ -1,5 +1,5 @@
 # TIG VI
-Trabalho de TIG VI
+Trabalho de TIG VI - 2017/2
 
 # Tutoriais e dicas para uso da ferramenta Git
 
