@@ -14,7 +14,7 @@ pip install selenium
 
 3.1 - Download
 ```
-Download the geckodriver from *[here](https://github.com/mozilla/geckodriver/releases)
+Download the geckodriver from [here](https://github.com/mozilla/geckodriver/releases)
 ```
 3.2 - Copy to 
 ```
