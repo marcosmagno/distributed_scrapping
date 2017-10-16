@@ -1,6 +1,26 @@
 # TIG VI
 Trabalho de TIG VI
 
+# Tutorial para instalar o Selenium ( Ubuntu )
+1 - Install pip
+```
+sudo apt-get install python-pip
+```
+2 - Install selenium ( versão atual )
+```
+pip install selenium
+```
+3 - Configure driver firefox ( geckodriver )
+3.1 - Download
+```
+Download the geckodriver from here (https://github.com/mozilla/geckodriver/releases)
+```
+3.2 - Copy to 
+```
+Extract and unzip and move the geckodriver file to /usr/local/bin/ directory
+```
+
+
 # Tutoriais e dicas para uso da ferramenta Git
 
 * [PDF de ajuda](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
