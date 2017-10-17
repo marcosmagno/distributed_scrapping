@@ -7,7 +7,6 @@ Login in website Linkedin
  
 Depedences:
 pip install selenium==2.43.0
-pip install webdriver
  
 Note.: Version of the Firefox: <= 45.0
  
@@ -43,8 +42,8 @@ class dataSearch():
          
         self.username = self.browser.find_element_by_id("session_key-login") # field of login
         self.password = self.browser.find_element_by_id("session_password-login") # filed of password
-        self.username.send_keys("#") # change your e-mail
-        self.password.send_keys("#") # change your password
+        self.username.send_keys("colocar email") # change your e-mail
+        self.password.send_keys("colocar senha") # change your password
         self.login_attempt = self.browser.find_element_by_xpath("//*[@type='submit']") #find a element of type submit
         self.login_attempt.submit() #apply button submit
         time.sleep(3)
@@ -52,7 +51,7 @@ class dataSearch():
  
     def search(self):
         self.url = ''
-        self.linkProfile = "https://www.linkedin.com/company/1009/"
+        self.linkProfile = "https://www.linkedin.com/search/results/people/?facetCurrentCompany=%5B%221009%22%2C%22291412%22%2C%229455792%22%5D"
  
         #self.browser.execute_script("window.open()")
         #self.browser.switch_to.window(self.browser.window_handles[1])
@@ -60,7 +59,7 @@ class dataSearch():
         self.browser.execute_script("window.scrollTo(0, 1024)")
  
         try:
-            self.all_spans = self.browser.find_elements_by_xpath("//a[@class='org-company-employees-snackbar__details-highlight snackbar-description-see-all-link link-without-visited-state ember-view']")
+            self.all_spans = self.browser.find_elements_by_xpath("//a[@class='search-result__result-link ember-view']")
             
             
             self.url = self.browser.find_elements_by_xpath("//a[@href]")
