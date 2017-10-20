@@ -68,7 +68,7 @@ class dataSearch():
 			logging.info("Close browse:")
 			logging.info("Finished" +  str(time.strftime("%d/%m/%Y %H:%M:%S")))
 			return
-		time.sleep(5)     
+		time.sleep(5)
 				
 		# Get DIV
 		for self.span in self.all_spans:
@@ -78,9 +78,8 @@ class dataSearch():
 			#print self.lista_empresa
 
 		for i in self.lista_empresa:
-	
-
 			self.browser.get(i)
+
 		'''	
 		try:
 			self.all_spans2 = self.browser.find_elements_by_xpath("//a[@class='org-company-employees-snackbar__details-highlight snackbar-description-see-all-link link-without-visited-state ember-view']")
