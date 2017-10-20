@@ -41,8 +41,8 @@ class dataSearch():
 		 
 		self.username = self.browser.find_element_by_id("session_key-login") # field of login
 		self.password = self.browser.find_element_by_id("session_password-login") # filed of password
-		self.username.send_keys("jonasfissicaro@hotmail.com") # change your e-mail
-		self.password.send_keys("Ib!turun@1320") # change your password
+		self.username.send_keys("") # change your e-mail
+		self.password.send_keys("") # change your password
 		self.login_attempt = self.browser.find_element_by_xpath("//*[@type='submit']") #find a element of type submit
 		self.login_attempt.submit() #apply button submit
 		time.sleep(3)
